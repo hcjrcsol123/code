@@ -1,3 +1,4 @@
+//一主多从模式
 #ifndef __I2C_H
 #define __I2C_H
 #include "stm32f10x.h" 
@@ -16,4 +17,4 @@ void I2C_SendByte(uint8_t Byte);
 uint8_t I2C_ReadByte(void);
 void I2C_Send_Ack(uint8_t AckBit);
 uint8_t I2C_Read_Ack(void);
-#endif
+#endif  
