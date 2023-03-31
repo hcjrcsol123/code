@@ -12,7 +12,7 @@ void MYI2C_W_SCL(uint8_t BitValue)
 void MYI2C_W_SDA(uint8_t BitValue)//写入数据
 {
 	GPIO_WriteBit(I2C_PROT,SDA_PIN,(BitAction)BitValue);
-	Delay_us(10);//防止主频过快,需要延时
+	Delay_us(10);//防止主频过快,从机跟不上，需要延时
 }
 uint8_t MYI2C_R_SDA(void)//读取数据
 {
